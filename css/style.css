@@ -17,3 +17,4 @@ ul.nav-menu{list-style: none;margin-left: 0px;overflow: hidden;margin-bottom: 0;
 .panel-title{text-transform: uppercase;}
 .form-horizontal label{color: #666}
 label.error{color: red;font-size: 12px;font-weight: normal;}
+.custom-cole{width:60%;display: inline-block;margin-left: 20px;vertical-align: middle;}
