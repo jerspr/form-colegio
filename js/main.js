@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$(".limpiarF").click(function(event){
+		event.preventDefault();
+	});
 	$("#datosbasicos").validate({
         // Specify the validation rules
         rules: {
