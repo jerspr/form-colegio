@@ -2,6 +2,18 @@ $(document).ready(function(){
 	$(".limpiarF").click(function(event){
 		event.preventDefault();
 	});
+	$('#fechnacalumn').datetimepicker({
+	    pickTime: false
+	});
+	$('#fechnacpadre').datetimepicker({
+	    pickTime: false
+	});
+	$('#fechnacmadre').datetimepicker({
+        pickTime: false
+    });
+    $('#fechnacapod').datetimepicker({
+        pickTime: false
+    });
 	$("#datosbasicos").validate({
         // Specify the validation rules
         rules: {
