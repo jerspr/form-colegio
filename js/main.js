@@ -2,18 +2,22 @@ $(document).ready(function(){
 	$(".limpiarF").click(function(event){
 		event.preventDefault();
 	});
-	$('#fechnacalumn').datetimepicker({
-	    pickTime: false
-	});
-	$('#fechnacpadre').datetimepicker({
-	    pickTime: false
-	});
-	$('#fechnacmadre').datetimepicker({
-        pickTime: false
-    });
-    $('#fechnacapod').datetimepicker({
-        pickTime: false
-    });
+	if($("#fechnacalumn").hasClass("date")){
+		$('#fechnacalumn').datetimepicker({
+		    pickTime: false
+		});
+		$('#fechnacpadre').datetimepicker({
+		    pickTime: false
+		});
+		$('#fechnacmadre').datetimepicker({
+	        pickTime: false
+	    });
+	    $('#fechnacapod').datetimepicker({
+	        pickTime: false
+	    });
+	}else{
+
+	}
 	$("#datosbasicos").validate({
         // Specify the validation rules
         rules: {
