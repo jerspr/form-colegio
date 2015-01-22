@@ -22,3 +22,6 @@ label.error{color: red;font-size: 12px;font-weight: normal;}
 .panel-body hr{margin-top: 0;}
 .inline-t{display: inline-block;}
 span.sub-desc{margin-left: 10px;color: #ccc;font-style: italic;font-size: 14px}
+.content-table{padding: 30px;overflow: hidden;}
+.content-table .pagination{float: right;}
+.center{text-align: center;}
