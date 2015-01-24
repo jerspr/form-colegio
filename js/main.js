@@ -34,7 +34,7 @@ $(document).ready(function(){
             nivel: "required",
             grado: "required"
         },
-        
+
         // Specify the validation error messages
         messages: {
             nombre: "Ingrese su nombre",
@@ -54,5 +54,14 @@ $(document).ready(function(){
         submitHandler: function(form) {
             form.submit();
         }
+    });
+
+    $('#aprobado').on('show.bs.modal', function (event) {
+        var click = $(event.relatedTarget)
+        var datoO = click.attr('data-id');
+        $('#datoid').html(datoO);
+    });
+    $('#aprobado').on('hidden.bs.modal', function (event) {
+        //console.log('Cerrando modal');
     });
 });

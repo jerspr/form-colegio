@@ -25,3 +25,4 @@ span.sub-desc{margin-left: 10px;color: #ccc;font-style: italic;font-size: 14px}
 .content-table{padding: 30px;overflow: hidden;}
 .content-table .pagination{float: right;}
 .center{text-align: center;}
+.content-form-modal .modal-body{padding: 25px}

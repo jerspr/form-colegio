@@ -66,7 +66,7 @@
                                                 <td>Segundo</td>
                                                 <td>2015/02/02</td>
                                                 <td class="center">
-                                                    <a href="#" data-toggle="modal" data-target="#aprobado"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-right:3px"></span></a>
+                                                    <a href="#" data-toggle="modal" data-target="#aprobado" data-id="10"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-right:3px"></span></a>
                                                     <a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true" style="margin-right:3px"></span></a>
                                                     <a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></a>
                                                 </td>
@@ -78,7 +78,7 @@
                                                 <td>Segundo</td>
                                                 <td>2015/02/02</td>
                                                 <td class="center">
-                                                    <a href="#" data-toggle="modal" data-target="#aprobado"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-right:3px"></span></a>
+                                                    <a href="#" data-toggle="modal" data-target="#aprobado" data-id="9"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-right:3px"></span></a>
                                                     <a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true" style="margin-right:3px"></span></a>
                                                     <a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></a>
                                                 </td>
@@ -173,13 +173,21 @@
         <div class="modal fade" id="aprobado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-                <form class="form-horizontal">
+                <form class="content-form-modal" id="acadpsico">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                     </div>
                     <div class="modal-body">
-                        Esto es el contenido del modal
+                        <p>Estos datos son del id <span id="datoid"></span></p>
+                        <div class="form-group">
+                            <label for="">Academico</label>
+                            <textarea class="form-control" rows="3" name="academico"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="">psicologico</label>
+                            <textarea class="form-control" rows="3" name="psicolgico"></textarea>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
